@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TODO List</title>
+	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	<!-- 总容器开始 -->
+	<div class="container">
+		<h1>My TODO</h1>
+		<!-- 添加任务开始 -->
+		<div class="add-task">
+			<form>
+				<input type="text" name="content" placeholder="e.g. 下午记得拿快递">
+				<button type="submit">提交</button>
+			</form>
+		</div>
+		<!-- 添加任务结束 -->
+
+		<!-- 任务列表开始 -->
+		<div class="task-list"></div>
+		<!-- 任务列表结束 -->
+
+		<div class="task-detail-mask"></div>
+		
+		<!-- 任务详情开始 -->
+		<from class="task-detail"></from>
+		<!-- 任务详情结束 -->
+	</div>
+	<!-- 总容器结束 -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/store/dist/store.legacy.min.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>

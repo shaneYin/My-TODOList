@@ -1,0 +1,151 @@
+
+
+body{
+	background-color: #d36b05;
+	color: #333;
+}
+.container{
+	position: relative;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+input, button, textarea{
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+button{
+	background-color: #0593D3;
+	color: #fff;
+}
+a{
+	color: #333333;
+	text-decoration: none;
+}
+button:hover{
+	background-color: #029B62;
+}
+textarea{
+	resize: none;
+}
+input[type=text],input[type=date],textarea{
+	display: block;
+	width: 100%;
+	background-color: #ddd;
+	box-shadow: 0  2px 3px rgba(0, 0 ,0, 0.2);
+}
+input, .task-item, button, textarea{
+	padding: 15px;
+	border-radius: 5px;
+}
+button, .task-item{
+	cursor: pointer;
+	transition: background 0.5s;
+	box-shadow: 0  2px 3px rgba(0, 0 ,0, 0.2);
+}
+h1{
+	text-align: center;
+	color: #fff;
+}
+
+.add-task input[type=text]{
+	float: left;
+	width: 86%;
+	margin-right: 1%;
+}
+.add-task input[type=text]:hover,
+.add-task input[type=text]:focus{
+	background-color: #fff;
+}
+.add-task button{
+	width: 13%;
+}
+
+/* 列表 */
+.task-list{
+	margin: 20px 0;
+}
+/* 列表项 */
+.task-item{
+	background-color: #fff;
+	margin-bottom: 5px;
+	color: #333;
+}
+.task-item:hover{
+	background-color: #a4e5f3;
+}
+.task-content{
+	padding-left: 10px;
+}
+.task-item .anchor{
+	float: right;
+	margin: 0 10px;
+}
+.task-item .anchor:hover{
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+/* 任务详情 */
+.task-detail, .task-detail-mask{
+	display: none;
+	position: absolute;
+}
+
+.task-detail{
+	background-color: #fff;
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+	bottom: 0;
+	right: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+/* 遮罩层 */
+.task-detail-mask{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+/* 查看详情 */
+.task-detail .detail-content{
+	padding: 10px 0;
+	cursor: pointer;
+}
+.task-detail *{
+	margin: 10px 0;
+}
+.task-detail textarea{
+	height: 100px;
+}
+.task_detail_btn{
+	display: block;
+	width: 100%;
+}
+
+
+/* 响应式：媒体查询 */
+@media screen and (max-width: 1200px) {
+	.container{
+		padding: 0 40px;
+	}
+	.task-detail{
+		margin-right: 40px;
+	}
+}
+@media screen and (max-width: 560px) {
+	.add-task input[type=text] {
+		float: none;
+		width: 100%;
+	}
+	.add-task button {
+    width: 100%;
+    margin-top: 10px;
+	}
+}
