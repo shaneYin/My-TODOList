@@ -96,9 +96,10 @@ h1{
 .task-detail{
 	background-color: #fff;
 	width: 50%;
+	min-height: 400px;
 	height: 100%;
 	padding: 10px;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	box-sizing: border-box;
 	border-radius: 5px;
